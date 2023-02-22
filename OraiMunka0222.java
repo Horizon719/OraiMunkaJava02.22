@@ -3,6 +3,10 @@ package oraimunka02.pkg22;
 public class OraiMunka0222 {
 
     public static void main(String[] args) {
+        metodusHivasok();
+    }
+
+    private static void metodusHivasok() {
         int a = 4;
         int b = 5;
         int c = 6;
@@ -12,7 +16,7 @@ public class OraiMunka0222 {
         int osszeg3 = osszead(osszeg1, c);
         kiir("Az elso tiz szam osszege: " + elso10SzamOsszege() + "\n");
         kiir(a + "+" + b + "=" + osszead(a, b) + "\n");
-        kiir(a + "+" + b + + c + d + "=" + osszead(osszeg1, osszeg2) + "\n");
+        kiir(a + "+" + b + "+"+ c + d + "=" + osszead(osszeg1, osszeg2) + "\n");
         kiir("Az a + b + c gyöke=" + Math.sqrt(osszeg3) + "\n");
     }
     
