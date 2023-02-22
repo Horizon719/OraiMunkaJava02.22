@@ -19,12 +19,7 @@ public class Equalizer {
         Random rnd = new Random();
         
         int mennyi = rnd.nextInt(7-3+1)+3;
-        String szoveg = "\u001B[45m" + " ";
-        String ki = "";
-        for (int j = 0; j < mennyi; j++) {
-            ki += szoveg;
-        }
-        System.out.println(ki);
+        eq(mennyi);
     }
     
     private static void eq(int mennyi) {
