@@ -1,20 +1,26 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
- */
 package oraimunka02.pkg22;
 
-/**
- *
- * @author Sanya
- */
 public class OraiMunka0222 {
 
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String[] args) {
-        // TODO code application logic here
+        elso10();
+    }
+    
+    private static void elso10(){
+        int osszeg = 0;
+        for (int i = 0; i < 10; i++) {
+            osszeg += i;
+            osszead(osszeg, i);
+        }
+        kiir(osszeg);
+    }
+
+    private static void kiir(int osszeg){
+        System.out.println("Az elso 10 szam osszege: " + osszeg);
+    }
+    
+    private static int osszead(int a, int b){
+        return a += b;
     }
     
 }
