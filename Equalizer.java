@@ -25,11 +25,11 @@ public class Equalizer {
         eq(mennyi, false);
     }
     
-    private static void eq(boolean db) {
-        eq(rnd.nextInt(7-3+1)+3, db);
+    private static void eq(boolean dbKiir) {
+        eq(rnd.nextInt(7-3+1)+3, dbKiir);
     }
     
-    private static void eq(int mennyi, boolean db) {
+    private static void eq(int mennyi, boolean dbKiir) {
         String szoveg = "\u001B[45m" + " ";
         String ki = "";
         int i = 0;
@@ -37,7 +37,7 @@ public class Equalizer {
             ki += szoveg;
             i++;
         }
-        if (db == true){
+        if (dbKiir == true){
             System.out.println(ki + "\u001B[0m (%d)".formatted(i));
         } else{
             System.out.println(ki);
